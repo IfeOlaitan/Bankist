@@ -170,7 +170,7 @@ observer.observe(section1);
 //*Application
 const header = document.querySelector('.header');
 const navHeight = nav.getBoundingClientRect().height;
-console.log(navHeight);
+//console.log(navHeight);
 
 //Callback function
 const stickyNav = function (entries) {
@@ -222,7 +222,7 @@ allSections.forEach(function (section) {
 
 //?6. Lazy loading Images
 const imgTargets = document.querySelectorAll('img[data-src]');
-console.log(imgTargets);
+//console.log(imgTargets);
 
 //Callback function
 const loadImg = function (entries, observer) {
@@ -253,7 +253,7 @@ imgTargets.forEach(img => imgObserver.observe(img));
 
 
 //?7. Slider
-const sliders = function () {
+const slider = function () {
   const slides = document.querySelectorAll('.slide');
   const slider = document.querySelector('.slider');
   const btnLeft = document.querySelector('.slider__btn--left');
@@ -281,7 +281,7 @@ const sliders = function () {
   const activateDot = function (slide) {
     document.querySelectorAll('.dots__dot').forEach(dot => dot.classList.remove('dots__dot--active'));
   
-    document.querySelector(`.dots__dat[data-slide="${slide}"]`).classList.add('.dots__dot--active');
+    document.querySelector(`.dots__dot[data-slide="${slide}"]`).classList.add('dots__dot--active');
   }
 
   //*Function to go to a slide
@@ -355,7 +355,7 @@ const sliders = function () {
   });
 }
 
-sliders();
+slider();
 
 //!Lectures
 //?Selecting elements
