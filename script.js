@@ -295,11 +295,9 @@ const slider = function () {
 
   //*Next slide
   const nextSlide = function () {
-    if (curSlide === maxSlides - 1)
-    {
+    if (curSlide === maxSlides - 1) {
       curSlide = 0;
-    } else
-    {
+    } else {
       curSlide++;
     }
   
@@ -309,11 +307,9 @@ const slider = function () {
 
   //*Prev slide
   const prevSlide = function () {
-    if (curSlide === 0)
-    {
+    if (curSlide === 0) {
       curSlide = maxSlides - 1;
-    } else
-    {
+    } else {
       curSlide--;
     }
 
